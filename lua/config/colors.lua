@@ -19,7 +19,7 @@ require("tokyonight").setup({
     end,
 })
 
-vim.cmd[[colorscheme tokyonight]] -- specify colorscheme to use
+vim.cmd.colorscheme("tokyonight") -- specify colorscheme to use
 
 --vim.cmd[[hi DiffText guibg=red guifg=black]]
 --vim.cmd[[hi Folded ctermfg=Black ctermbg=DarkGrey guifg=black guibg=DarkGrey]]
