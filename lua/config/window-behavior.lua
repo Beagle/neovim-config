@@ -13,6 +13,8 @@ vim.o.sidescrolloff = 5 -- columns between your custor and edge of window
 ------------------
 local map = vim.keymap.set
 
+  -- NB: see `:help wincmd` - window commands sit behing Ctl-w by default
+
   -- Move between windows with ctl-direction instead of ctl-w + direction
 map('n', '<C-h>', '<C-w>h')
 map('n', '<C-j>', '<C-w>j')
@@ -29,3 +31,9 @@ map(defaultModes, '<M-h>', '<C-w><lt>')
 map(defaultModes, '<M-j>', '<C-w>+')
 map(defaultModes, '<M-k>', '<C-w>-')
 map(defaultModes, '<M-l>', '<C-w>>')
+
+  -- Rearrange windows
+map(defaultModes, '<leader>wh', '<C-w>H') -- move current window to left
+map(defaultModes, '<leader>wj', '<C-w>J') -- move current window to bottom
+map(defaultModes, '<leader>wk', '<C-w>K') -- move current window to top
+map(defaultModes, '<leader>wl', '<C-w>L') -- move current window to right
