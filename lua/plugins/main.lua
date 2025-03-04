@@ -2,10 +2,10 @@ return {
     {'folke/tokyonight.nvim', lazy = false, priority = 1000},
     {'williamboman/mason.nvim'}, -- rust
     {'williamboman/mason-lspconfig.nvim'}, -- rust
-    {'simrat39/rust-tools.nvim'}, -- rust
+    {'simrat39/rust-tools.nvim', lazy = true}, -- rust
     {'nvim-treesitter/nvim-treesitter'},
     {'mfussenegger/nvim-lint'},
-    {'pmizio/typescript-tools.nvim'},
+    {'pmizio/typescript-tools.nvim', lazy = true},
     {'mhartington/formatter.nvim'},
     {'dense-analysis/ale'},
     {
