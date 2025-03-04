@@ -19,12 +19,16 @@ vim.o.showmode      = true         -- display current mode on status line
 ------------------
 local map = vim.keymap.set
 
-map('n', '<leader>n', ':setlocal number!<cr>') -- toggle line numbers
-map('n', '<leader>m', ':set nowrap!<cr>')      -- toggle line wrap
+map('n', '<leader>n', ':setlocal number!<cr>', {desc = "Toggle line numbers"})
+map('n', '<leader>m', ':set nowrap!<cr>', {desc = "Toggle line wrap"})
 
   -- gutters (left columns for numbers and indicators)
-map('n', '<leader>g', ':set signcolumn=no <bar> :set nonumber<cr>') -- hide
-map('n', '<leader>G', ':set signcolumn=auto <bar> :set number<cr>') -- show
+map('n', '<leader>g', ':set signcolumn=no <bar> :set nonumber<cr>',
+    {desc = "Hide line numbers and sign column"})
+map('n', '<leader>G', ':set signcolumn=auto <bar> :set number<cr>',
+    {desc = "Show line numbers and sign column"})
 
   -- toggle color column
-map('n', '<leader>c', ':exe "set colorcolumn=" . (&colorcolumn == "" ? "80" : "")<CR>')
+map('n', '<leader>c',
+    ':exe "set colorcolumn=" . (&colorcolumn == "" ? "80" : "")<CR>',
+    {desc = "Toggle the 'max line length' colorcolumn"})

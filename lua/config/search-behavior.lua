@@ -15,4 +15,5 @@ o.smartcase   = true -- Do smart case matching when searching
 ------------------
 local map = vim.keymap.set
 
-map('n', '<leader><esc>', ':let @/ = ""<cr>') -- remove highlight after search
+map('n', '<leader><esc>', ':let @/ = ""<cr>',
+    {desc = "Remove highlight after search"})

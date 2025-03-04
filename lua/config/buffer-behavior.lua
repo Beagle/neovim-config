@@ -7,8 +7,8 @@
 ------------------
 local map = vim.keymap.set
 
-map('n', '<leader>[', ':bprevious<cr>') -- Move to previous bufffer
-map('n', '<leader>]', ':bnext<cr>')     -- Move to next bufffer
-map('n', '<leader>]', ':bnext<cr>')     -- Move to next bufffer
-map('n', '<leader>N', ':enew<cr>')      -- Open a new empty buffer
-map('n', '<leader>q', ':bp <BAR> bd #<cr>') -- Close current buffer, goto prev
+map('n', '<leader>[', ':bprevious<cr>', {desc = "Move to previous buffer"})
+map('n', '<leader>]', ':bnext<cr>', {desc = "Move to next bufffer"})
+map('n', '<leader>]', ':bnext<cr>', {desc = "Move to next bufffer"})
+map('n', '<leader>N', ':enew<cr>', {desc = "Open a new empty buffer"})
+map('n', '<leader>q', ':bp <BAR> bd #<cr>', {desc = "Close buffer, go to prev"})
