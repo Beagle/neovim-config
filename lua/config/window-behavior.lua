@@ -22,7 +22,7 @@ map('n', '<C-k>', '<C-w>k')
 map('n', '<C-l>', '<C-w>l')
 map('n', '<C-p>', '<C-w>p') -- move to PREVIOUS window with ctl-p
 
-map('n', '<leader>w', '<C-w>c') -- Close current window
+map('n', '<leader>ww', '<C-w>c') -- Close current window
 map('n', '<leader>o', '<C-w>o') -- Close all others windows
 
   -- Resize windows with alt-direction instead of ctl-w + </>/+/-
