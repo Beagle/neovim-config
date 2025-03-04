@@ -37,3 +37,9 @@ map(defaultModes, '<leader>wh', '<C-w>H') -- move current window to left
 map(defaultModes, '<leader>wj', '<C-w>J') -- move current window to bottom
 map(defaultModes, '<leader>wk', '<C-w>K') -- move current window to top
 map(defaultModes, '<leader>wl', '<C-w>L') -- move current window to right
+
+ -- By default, open help windows in a vertical split on the right
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "help",
+    callback = function() vim.cmd([[wincmd L|vert resize 90]]) end,
+})
