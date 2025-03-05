@@ -14,6 +14,12 @@ vim.o.laststatus    = 2            -- always have a status line on last window
 vim.o.showcmdloc    = "statusline" -- show keystrokes in status line of window
 vim.o.showmode      = true         -- display current mode on status line
 
+-----------------------------------
+-- Highlight trailing whitespace --
+-----------------------------------
+vim.cmd.highlight("EoLSpace ctermbg=238 guibg=#990000")
+vim.cmd("match EoLSpace /\\s\\+$/")
+
 ------------------
 -- key bindings --
 ------------------

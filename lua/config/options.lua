@@ -27,9 +27,6 @@ o.wildmode = "longest:full,full"
 -- o.ofu omnifunc is commented out while I experiment
 o.ofu = "syntaxcomplete#Complete" -- what function to use for omni complete
 
--- Remove whitepsace at the end of lines
-map("n", "<leader>s", ":FixWhitespace<CR>")
-
 -- Start interactive EasyAlign for a motion/text object (e.g. gaip)
 map("n", "ga", "<Plug>(EasyAlign)")
 
