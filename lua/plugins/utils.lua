@@ -10,6 +10,5 @@ return {
             desc = "Remove trailing whitespace from all lines"
         }
     }},
-    {'cocopon/inspecthi.vim', lazy = false},
     {'AndrewRadev/linediff.vim', lazy = false},
 }
