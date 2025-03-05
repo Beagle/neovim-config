@@ -11,4 +11,30 @@ return {
         }
     }},
     {'AndrewRadev/linediff.vim', lazy = false},
+    {
+        'nvim-telescope/telescope.nvim',
+        dependencies = {'nvim-lua/plenary.nvim'},
+        keys = {
+            {
+                "<leader><leader>",
+                ":Telescope find_files<cr>",
+                desc = "Find files"
+            },
+            {
+                "<leader>b",
+                ":Telescope buffers<cr>",
+                desc = "Select from open buffers"
+            },
+            {
+                "<leader>/",
+                ":Telescope live_grep<cr>",
+                desc = "Grep file system"
+            },
+            {
+                "<leader>r",
+                ":Telescope registers<cr>",
+                desc = "Show contents of registers"
+            },
+        }
+    },
 }
