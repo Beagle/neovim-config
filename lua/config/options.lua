@@ -32,6 +32,3 @@ map("n", "ga", "<Plug>(EasyAlign)")
 
 -- Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
 map("v", "<Enter>", "<Plug>(EasyAlign)")
-
--- TagList toggle
-map("n", "<leader>t", ":TlistToggle<CR>")
