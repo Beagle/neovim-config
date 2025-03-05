@@ -4,6 +4,7 @@ return {
     {'tpope/vim-repeat', lazy = false},
     {'tummetott/unimpaired.nvim', event = 'VeryLazy'},
     {'numToStr/Comment.nvim'},
+    {'AndrewRadev/linediff.vim', lazy = false},
     {'bronson/vim-trailing-whitespace', keys = {
         {
             "<leader>s",
@@ -11,7 +12,6 @@ return {
             desc = "Remove trailing whitespace from all lines"
         }
     }},
-    {'AndrewRadev/linediff.vim', lazy = false},
     {
         'nvim-telescope/telescope.nvim',
         dependencies = {'nvim-lua/plenary.nvim'},
