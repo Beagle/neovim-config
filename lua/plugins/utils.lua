@@ -2,7 +2,7 @@ return {
     {'tpope/vim-sensible', lazy = false},
     {'junegunn/vim-easy-align', lazy = false},
     {'tpope/vim-repeat', lazy = false},
-    {'tpope/vim-unimpaired', lazy = false},
+    {'tummetott/unimpaired.nvim', event = 'VeryLazy'},
     {'bronson/vim-trailing-whitespace', keys = {
         {
             "<leader>s",
