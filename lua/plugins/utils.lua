@@ -3,6 +3,7 @@ return {
     {'junegunn/vim-easy-align', lazy = false},
     {'tpope/vim-repeat', lazy = false},
     {'tummetott/unimpaired.nvim', event = 'VeryLazy'},
+    {'numToStr/Comment.nvim'},
     {'bronson/vim-trailing-whitespace', keys = {
         {
             "<leader>s",
