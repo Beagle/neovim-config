@@ -8,6 +8,11 @@ return {
         'nvim-treesitter/nvim-treesitter',
         build = ":TSUpdate",
         config = function ()
+            -- Treesitter folding
+            vim.wo.foldmethod = 'expr'
+            vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
+            vim.wo.foldlevel = 99
+
             local configs = require("nvim-treesitter.configs")
 
             configs.setup({
