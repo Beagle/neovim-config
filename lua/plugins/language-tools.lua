@@ -7,40 +7,38 @@ return {
     {
         'nvim-treesitter/nvim-treesitter',
         build = ":TSUpdate",
+        main = 'nvim-treesitter.configs',
+        opts = {
+            auto_install = true,
+            ensure_installed = {
+                "c",
+                "css",
+                "html",
+                "javascript",
+                "lua",
+                "query",
+                "rust",
+                "toml",
+                "vim",
+                "vimdoc",
+            },
+            highlight = {
+                enable = true,
+                additional_vim_regex_highlighting=false,
+            },
+            indent = { enable = true },
+            rainbow = {
+                enable = true,
+                extended_mode = true,
+                max_file_lines = nil,
+            },
+            sync_install = false,
+        },
         config = function ()
             -- Treesitter folding
-            vim.wo.foldmethod = 'expr'
-            vim.wo.foldexpr = 'nvim_treesitter#foldexpr()'
-            vim.wo.foldlevel = 99
-
-            local configs = require("nvim-treesitter.configs")
-
-            configs.setup({
-                auto_install = true,
-                ensure_installed = {
-                    "c",
-                    "css",
-                    "html",
-                    "javascript",
-                    "lua",
-                    "query",
-                    "rust",
-                    "toml",
-                    "vim",
-                    "vimdoc",
-                },
-                highlight = {
-                    enable = true,
-                    additional_vim_regex_highlighting=false,
-                },
-                indent = { enable = true },
-                rainbow = {
-                    enable = true,
-                    extended_mode = true,
-                    max_file_lines = nil,
-                },
-                sync_install = false,
-            })
+            vim.o.foldmethod = 'expr'
+            vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
+            vim.o.foldlevel = 99
         end
     },
     {
