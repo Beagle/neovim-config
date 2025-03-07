@@ -60,14 +60,5 @@ return {
             sync_install = false,
         },
     },
-    {
-        'dense-analysis/ale', -- async linting
-        config = function()
-            vim.g.ale_linters = {
-                javascript = {'eslint'},
-                lua = {'lua-language-server'},
-                rust = {'rust-analyzer'},
-            }
-        end
-    },
+    {'dense-analysis/ale'}, -- async linting
 }
