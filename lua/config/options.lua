@@ -32,3 +32,7 @@ map("n", "ga", "<Plug>(EasyAlign)")
 
 -- Start interactive EasyAlign in visual mode (e.g. vip<Enter>)
 map("v", "<Enter>", "<Plug>(EasyAlign)")
+
+-- make :<W/Q> behave the same as :<w/q>
+vim.api.nvim_create_user_command('W', 'write', {desc = "Alias for :w"})
+vim.api.nvim_create_user_command('Q', 'quit', {desc = "Alias for :q"})
