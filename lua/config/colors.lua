@@ -20,3 +20,5 @@ require("tokyonight").setup({
 })
 
 vim.cmd.colorscheme("tokyonight") -- specify colorscheme to use
+
+vim.cmd([[autocmd FileType gitcommit call matchadd('Error', '\%1l\%>50v')]])
