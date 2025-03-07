@@ -34,12 +34,6 @@ return {
             },
             sync_install = false,
         },
-        config = function ()
-            -- Treesitter folding
-            vim.o.foldmethod = 'expr'
-            vim.o.foldexpr = 'nvim_treesitter#foldexpr()'
-            vim.o.foldlevel = 99
-        end
     },
     {
         'dense-analysis/ale', -- async linting
